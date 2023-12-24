@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Papan Skor</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container d-flex justify-content-center align-items-center">
+            <section>
+                <div class="scoreboard row text-center pt-3">
+                    <div class="points col-md-6">
+                        <h2>Player 1</h2>
+                        <p id="p1-display">0</p>
+                        <button type="button" class="p1-button btn btn-primary">+1</button>
+                    </div>
+                    <div class="points col-md-6">
+                        <h2>Player 2</h2>
+                        <p id="p2-display">0</p>
+                        <button type="button" class="p2-button button btn btn-primary">+1</button>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 text-center justify-content-center">
+                    <label for="winpoint">Win Point</label>
+                    <select name="" id="winpoint" class="form-select">
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                    <button type="button" id="reset" class="btn btn-primary">Reset</button>
+                </div>
+            </section>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>
